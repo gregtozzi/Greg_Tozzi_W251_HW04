@@ -19,5 +19,16 @@ The baseline model's validation accuracy appears to converge to 0.94.  I ran the
 - *Double the filters in the first convolutional layer.*  The validation accuracy converged a bit lower than in the baseline example (approximately 0.93).
 - *Halve the filters in the first convolutional layer.*  The validation accuracy converged to approximately 0.97.
 - *Double the filters in the second convolutional layer.*  The validation accuracy converged to 0.99.
-- *Halve the filters in the second convolutional layer.*  
-- 
+- *Halve the filters in the second convolutional layer.*  The validation accuracy converged to 0.95.
+
+### 2.3 - Remove the pooling layers. Does it impact the accuracy?
+No.
+
+### 2.4 - Add one more conv layer. Does it help with accuracy?
+Possibly.  Adding another 16-filter convolutional layer resulted in validation accuracy converging to 0.99.
+
+### 2.4 - Increase the batch size. What impact does it have?
+Training slows a bit, and validation accuracy converged to around 0.92.
+
+### 2.5 - What is the best accuracy you can achieve? Are you over 99%? 99.5%?
+I'm right around 0.99.
